@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>AR Food Menu</h2>
+<p>This is your AR page.</p>
+</body>
+</html>
+
