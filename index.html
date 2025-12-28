@@ -1,9 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My App</title>
+  <meta charset="UTF-8">
+  <title>AR Product Demo</title>
+
+  <!-- Model Viewer -->
+  <script type="module"
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+    model-viewer {
+      width: 100%;
+      height: 400px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hello! GitHub Pages is working 🎉</h1>
+
+  <h2>View Product in Augmented Reality</h2>
+
+  <model-viewer
+    src="product.glb"
+    ar
+    ar-modes="scene-viewer webxr quick-look"
+    camera-controls
+    auto-rotate>
+  </model-viewer>
+
+  <p>Tap the AR button to view on your table 📱</p>
+
 </body>
 </html>
